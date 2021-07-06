@@ -1,0 +1,23 @@
+<div class="text-center mt-4">
+
+    <form class="form-signin border rounded" action="post" (submit)='login($event)'>
+      <img class="mb-4" src="../../../assets/cart.png" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Login to your E-shop Account</h1>
+  
+      <p *ngIf='error' class="alert alert-danger">{{error}}</p>
+      <p *ngIf='success' class="alert alert-success">{{success}}</p>
+  
+  
+  
+      
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control mb-2 border rounded" name="email" placeholder="Email address" required autofocus>
+      
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control mb-2 border rounded" name="password" placeholder="Password" required>
+      
+      <button class="btn btn-lg btn-light border rounded btn-block" type="submit">Login</button>
+      <p class="mt-3 mb1 text-muted">&copy; 2017-2018</p>
+    </form>
+  
+  </div>
